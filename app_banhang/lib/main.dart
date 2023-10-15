@@ -1,3 +1,6 @@
+import 'package:app_banhang/bottomnavigator.dart';
+import 'package:app_banhang/profileScreen.dart';
+import 'package:app_banhang/settingscreen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -13,13 +16,17 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Text("Nhom 14"),
-        ),
-      ),
+          primarySwatch: Colors.blue,
+          iconTheme: const IconThemeData(color: Colors.black)),
+      supportedLocales: {const Locale('en', '')},
+      // home: const MyBottomNavigator(),
+      initialRoute: '/',
+      routes: {
+        '/': (context) => const MyBottomNavigator(index: 0),
+        '/setting': (context) => const MySetting(),
+        '/profile': (context) => const MyProfile(),
+      },
+      debugShowCheckedModeBanner: false,
     );
   }
 }

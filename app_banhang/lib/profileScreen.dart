@@ -1,4 +1,6 @@
+import 'package:app_banhang/profile_design_ui/my_orders.dart';
 import 'package:flutter/material.dart';
+import 'profile_design_ui/my_orders.dart';
 
 class MyProfile extends StatefulWidget {
   const MyProfile({super.key});
@@ -37,13 +39,11 @@ class _MyProfileState extends State<MyProfile> {
         Container(
           color: Colors.deepOrange,
           width: double.infinity,
-          height: 250,
-          child: const Center(
-            child: Text(
-              "Đơn hàng của tôi",
-              textAlign: TextAlign.center,
-            ),
-          ),
+
+          height: 600,
+          child: const Center(child:
+            MyOders()
+          ,)
         ),
       ],
     );

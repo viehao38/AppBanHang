@@ -41,8 +41,9 @@ class _MyBottomNavigatorState extends State<MyBottomNavigator> {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        backgroundColor: Colors.pink,
+        backgroundColor: const Color.fromARGB(255, 255, 255, 255),
         appBar: AppBar(
+          backgroundColor: const Color.fromARGB(250, 249, 190, 124),
           shape: const RoundedRectangleBorder(
             borderRadius: BorderRadius.vertical(
               bottom: Radius.circular(20),

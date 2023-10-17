@@ -16,6 +16,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
+          // fontFamily: "Next Sunday",
           primarySwatch: Colors.blue,
           iconTheme: const IconThemeData(color: Colors.black)),
       supportedLocales: {const Locale('en', '')},

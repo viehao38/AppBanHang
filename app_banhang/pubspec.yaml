@@ -61,6 +61,7 @@ flutter:
     - assets/img/Yelan.jpg
     - assets/img/background.jpg
     - assets/img/avatar.jpg
+    - assets/img/laptoplenovo.jpg
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
@@ -89,10 +90,14 @@ flutter:
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
   fonts:
-    - family: Next Bro
+    - family: VLAMPLESOFT
       fonts:
-        - asset: assets/fonts/Next Bro.otf
+        - asset: assets/fonts/VLAMPLESOFT.OTF
 
-    - family: Next Sunday
+    - family: VLAMPLESOFT-MEDIUM
       fonts:
-        - asset: assets/fonts/Next Sunday.ttf
+        - asset: assets/fonts/VLAMPLESOFT-MEDIUM.OTF
+
+    - family: VLAMPLESOFT-THIN
+      fonts:
+        - asset: assets/fonts/VLAMPLESOFT-THIN.OTF

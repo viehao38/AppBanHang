@@ -27,17 +27,27 @@ class _MyProfileState extends State<MyProfile> {
           ),
         ),
         Container(
-          color: const Color.fromARGB(255, 255, 255, 255),
-          width: double.infinity,
-          height: 40,
-          child: const Center(
-            child: Text(
-              "Đơn hàng của tôi",
-              textAlign: TextAlign.center,
-            ),
+          padding: const EdgeInsets.all(3),
+          margin: const EdgeInsets.fromLTRB(10, 0, 10, 0),
+          child: const TextField(
+            decoration: InputDecoration(
+                contentPadding: EdgeInsets.symmetric(vertical: 8),
+                labelText: "Tìm kiếm",
+                prefixIcon: Icon(Icons.search),
+                border: OutlineInputBorder(
+                  borderRadius: BorderRadius.all(Radius.circular(10)),
+                )),
           ),
         ),
-        const MyOrder()
+
+        const SizedBox(
+            // color: Colors.deepOrange,
+            width: double.infinity,
+            height: 350,
+            child: Center(
+              child: MyOders(),
+            )),
+        // const MyOrder()
       ],
     );
   }

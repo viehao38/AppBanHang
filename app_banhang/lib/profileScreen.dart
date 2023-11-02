@@ -1,5 +1,6 @@
 import 'package:app_banhang/profile_design_ui/my_orders.dart';
 import 'package:app_banhang/profile_design_ui/profile_info.dart';
+import 'package:app_banhang/profile_design_ui/statistical.dart';
 import 'package:flutter/material.dart';
 
 class MyProfile extends StatefulWidget {
@@ -15,17 +16,7 @@ class _MyProfileState extends State<MyProfile> {
     return ListView(
       children: [
         const MyProfileInfo(),
-        Container(
-          color: const Color.fromARGB(255, 255, 255, 255),
-          width: double.infinity,
-          height: 100,
-          child: const Center(
-            child: Text(
-              "Thống kê",
-              textAlign: TextAlign.center,
-            ),
-          ),
-        ),
+        const Statiscal(),
         Container(
           padding: const EdgeInsets.all(3),
           margin: const EdgeInsets.fromLTRB(10, 0, 10, 0),
@@ -39,7 +30,6 @@ class _MyProfileState extends State<MyProfile> {
                 )),
           ),
         ),
-
         const SizedBox(
             // color: Colors.deepOrange,
             width: double.infinity,

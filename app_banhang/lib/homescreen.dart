@@ -12,8 +12,9 @@ class MyHome extends StatelessWidget {
           width: double.infinity,
           child: const Center(child: Text("Home")),
         ),
-        
+
         Container(
+          
           color: const Color.fromARGB(255, 218, 138, 26),
           height: 200,
           width: double.infinity,

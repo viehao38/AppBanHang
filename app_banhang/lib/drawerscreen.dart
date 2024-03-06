@@ -12,7 +12,7 @@ class _MyDrawerState extends State<MyDrawer> {
   int _valueItem = 0;
   @override
   void initState() {
-    // TODO: implement initState
+    // TODO: implement initSta
     super.initState();
     _valueItem = widget.idx;
   }

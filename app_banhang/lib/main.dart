@@ -23,6 +23,7 @@ class MyApp extends StatelessWidget {
       // home: const MyBottomNavigator(),
       initialRoute: '/',
       routes: {
+        
         '/': (context) => const MyBottomNavigator(index: 0),
         '/setting': (context) => const MySetting(),
         '/profile': (context) => const MyProfile(),
